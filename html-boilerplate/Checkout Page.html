@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+
+    <section>
+        <h2>Your Cart<h2/>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/spoon.jpg" alt="an-image">
+        <h6>Left-handed spoon
+            <br>
+$29.99  </h6>
+    </section>
+    <!--  -->
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+
+            <label for="card-name" >Cardholder Name</label>
+            <input aria-required="true" required  placeholder="Ex.NameHere" id="card-name" name="card-name" type="text">
+        <br>
+            <label for="card-number">Card Number</label>
+            <input aria-required="true" required placeholder="Ex.12345" id="card-number" name="card-number" type="number">
+        <br>
+            <label for="card-date" id="card-date" name="card-date">Expiry Date</label>
+        <input aria-required="true" required placeholder="Month/Year" id="card-date" name="card-date" type="date">
+        <br>
+        <label for="card-cvv">CVV</label>
+        <input aria-required="true" required placeholder="Ex.123" id="card-cvv" name="card-cvv" type="text">
+        <br>
+        <button type="submit">Place order</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
