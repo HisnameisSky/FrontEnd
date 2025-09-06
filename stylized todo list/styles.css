@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: 2px solid blue; /* Example outline style */
+}
+
+.sub-item-link:visited {
+  color: rgb(114, 170, 216);
+}
+.sub-item-link:hover {
+  color: saddlebrown;
+}
+.sub-item-link:active {
+  color: rgb(214, 104, 25);
+}
+
+.todo-list > li {
+   margin-bottom: 20px;
+    margin-right: 40px;
+    padding: 5px;
+    border: dotted 3px ivory;
+    border-radius: 10px;
+    background-color: rgb(237, 243, 238)
+}
