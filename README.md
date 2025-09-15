@@ -1,4 +1,4 @@
-# HTML, CSS, JavaScriptの実験所：
+# HTML, CSS, の実験所：
 （主に個人的な記録専用）
 
 > [!IMPORTANT]
