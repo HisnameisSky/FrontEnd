@@ -1,0 +1,82 @@
+
+
+input, select, textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+    
+}
+
+input:focus, textarea:focus {
+  border-color: orange;
+  outline: red;
+}
+
+input:invalid, 
+select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+input:valid, 
+select:valid, textarea:valid {
+  border-color: green;
+}
+
+button {
+  border-radius: 16px; 
+  font-weight: bold;
+  height: 40px;
+}
+
+button:hover {
+  border-color: red;
+  background-color: black; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.radio-group input[type="radio"]:checked {
+  border: 2px solid blue; 
+  border-color: #007bff;
+  background-color: #e6f2ff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:first-of-type {
+  border-radius: 10px;
+}
+
+
+
+.container {
+  max-width: 90%;
+  margin: 5px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #cec6c6;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+}
