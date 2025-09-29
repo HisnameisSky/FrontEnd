@@ -1,0 +1,28 @@
+
+main {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#img-div {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+#title, #image, p, #img-caption, #section-title, a {
+  text-align: center;
+}
+
+section, #quotation {
+  font-size: 15px;
+}
