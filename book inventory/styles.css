@@ -1,0 +1,72 @@
+tr[class="read"]{
+  background-image: linear-gradient(to right, #ccffcc, #99ff99);
+}
+
+tr[class="to-read"]{
+  background-image: linear-gradient(to right, #eeeeee, #dddddd);
+}
+
+tr[class="in-progress"]{
+  background-image: linear-gradient(to right, #ffe5b4, #ffcc99);
+}
+
+span{
+  display: inline-block;
+}
+
+tr[class="read"] span[class="status"]{
+  background-image: linear-gradient(0deg,rgba(212, 193, 193, 1) 0%, rgba(230, 18, 18, 1) 100%);
+  border: 1px solid #d4c1c1;
+  border-radius: 5px;
+}
+
+tr[class="to-read"] span[class="status"]{
+  background-image: linear-gradient(0deg,rgba(34, 195, 96, 1) 0%, rgba(78, 193, 86, 1) 23%, rgba(97, 192, 81, 1) 100%, rgba(253, 187, 45, 1) 100%);
+  border: 1px solid #22c360;
+  border-radius: 5px;
+}
+
+tr[class="in-progress"] span[class="status"]{
+  background-image: linear-gradient(0deg,rgba(209, 125, 65, 1) 100%, rgba(235, 235, 235, 1) 100%);
+  border: 1px solid #d17d41;
+  border-radius: 5px;
+}
+
+span[class="status"], span[class^="rate"]{
+  height: 80%;
+  width: 80%;
+  padding: 5px;
+}
+
+span[class^="rate"] > span{
+  border: 1px solid gray;
+    border-radius: 10px;
+    margin: 2px;
+    height: 10px;
+    width: 10px;
+    background-color: whitesmoke;
+}
+
+span[class~="one"] span {
+    background-image: linear-gradient(to top, rgb(255,214,7), rgb(255,227,90));
+} 
+
+span[class~="two"] span{
+  background-image: linear-gradient(to top, rgb(255,214,7), rgb(255,227,90));
+    } 
+span[class~="three"] span{  
+    background-image: linear-gradient(to top, rgb(255,214,7), rgb(255,227,90));  
+    } 
+
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to bottom right, #ffdddd, #ff9999);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to bottom right, #fff6cc, #ffd966);
+}
+
+span[class~="three"] > span:nth-child(-n+3) {
+  background-image: linear-gradient(to bottom right, #d9fcd9, #66cc66);
+}
