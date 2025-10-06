@@ -1,0 +1,80 @@
+.title {
+  grid-area: title;
+  background-color:lavender;
+  color:purple;
+  text-align:center;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  background-color:rgba(180,100,200, 0.2);
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+  
+}
+
+h1, h2, h3 {
+  font-size: 48px;
+  margin-bottom: 0;
+  color:purple;
+}
+
+p {
+  color:purple;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(36, 22, 43,0.8);
+  font-weight: 800;
+}
+
+.small-article1,.small-article2,.small-article3 {
+background-color:rgba(180,100,200, 0.3);
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.newspaper-layout {
+  
+grid-area:newspaper-layout;
+display: grid;grid-template-areas:    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+
+grid-template-columns: repeat(3, 1fr);
+
+grid-template-rows:auto 1fr 1fr 1fr;
+
+gap:1rem;
+
+}
+.cover-image img {   max-width:100%;
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(80%);
+}
+.cover-image {
+  margin: 0;  
+  grid-area: cover-image;
+  
+}
+
