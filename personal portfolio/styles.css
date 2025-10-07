@@ -1,0 +1,152 @@
+/* Base Layout */
+body {
+  margin: 0;
+  padding-top: 60px; 
+  font-family: "Segoe UI", sans-serif;
+  background-color: #222;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bf3045;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+#navbar a:hover {
+  opacity: 0.8;
+}
+
+/* Welcome Section  */
+#welcome-section {
+  color: white;
+  text-align: center;
+  background: linear-gradient(90deg, #333639, #1c1d1e);
+  padding: 100px 20px;
+}
+
+#welcome-section h3 {
+    color:#bf3045;
+    font-weight: lighter;
+    font-style: italic;
+ }
+
+ #welcome-section h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+/* Projects Section */
+#project-section {
+  text-align: center;
+  background-color: #44577d;
+  padding: 80px 20px;
+}
+
+#project-section h3 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.project-tile {
+  background: linear-gradient(135deg, #6a5acd, #9370db);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  max-width: 300px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.project-tile img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tile h4 {
+  color:white;
+  background-color:#303841;
+  padding: 5%;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  color: white;
+  background-color: #303841;
+  padding: 80px 20px;
+}
+
+#contact h3 {
+  font-weight: lighter;
+}
+
+a { text-decoration:none;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contact Buttons　*/
+.contact-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  color: #6a5acd;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design  */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  .project-tile {
+    max-width: 90%;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .contact-btn {
+    width: 80%;
+  }
+}
